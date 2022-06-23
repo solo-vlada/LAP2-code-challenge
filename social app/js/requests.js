@@ -33,12 +33,12 @@ async function postNewPost (e) {
 
 
 //delete post 
-async function deletePost (title, date) {
-    try {
-        const options = {method: 'DELETE'}
-        await fetch(`http://localhost:3000/${title}/${date}`, options);
-        window.location.hash = `#posts`;
-    } catch (err) {
-        console.warn(err);
-    }
-}
+// async function deletePost (title, date) {
+//     try {
+//         const options = {method: 'DELETE'}
+//         await fetch(`http://localhost:3000/${title}/${date}`, options);
+//         window.location.hash = `#posts`;
+//     } catch (err) {
+//         console.warn(err);
+//     }
+// }
