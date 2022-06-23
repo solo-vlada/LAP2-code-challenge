@@ -33,7 +33,9 @@ let acceptData = () => {
         title: title.value,
     } 
     console.log(data);
+    localStorage.setItem("data", JSON.stringify(data));
     createPosts();
+
 };
 
 let createPosts = () => {
