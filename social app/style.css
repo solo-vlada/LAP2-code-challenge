@@ -1,15 +1,30 @@
 body {
-    font-family: sans-serif;
-    margin: 0 50px;
+    font-family: 'Montserrat', sans-serif;;
+    margin: 50px 50px;
 }
 
 .container {
     display: flex;
-    gap: 50px;
+    align-items: center;
+    
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form > input {
+    font-family: 'Montserrat', sans-serif;
+    margin: 5px 0;
+    text-decoration: none;
+    border: none;
+    outline:none;
+
 }
 
 #posts {
-    width: 400px;
+    width: auto;
 }
 
 i {
@@ -29,4 +44,50 @@ i {
 
 #msg {
     color: red;
+}
+
+button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 17px;
+    color: #000;
+    text-decoration: none;
+    border: 1px solid #333;
+    border-radius: 16px;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    margin: 0 0 15px;
+    background-color: #fff;
+    cursor: pointer;
+    width: 30%;
+}
+
+#title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    line-height: 34px;
+}
+
+#pseudonym {
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+textarea {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    border: none;
+    font-size: 18px;
+    font-weight: 400;
+    outline: none;
+
+}
+
+#posts > div > p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
 }

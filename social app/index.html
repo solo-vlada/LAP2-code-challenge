@@ -5,24 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Social App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     <link rel="stylesheet" href="style.css">
-    <script defer src="main.js"></script>
+    <script defer src="./js/main.js"></script>
+    <script defer src="./js/requests.js"></script>
 </head>
 <body>
     <main>
-        <h1>Social Media App</h1>
         <div class="container">
             <div class="left">
                 <form action="#" id="form">
-                    <label for="post">Write your post here</label><br><br>
-                    <textarea name="post" id="input" cols="30" rows="10"></textarea><br><br>
+                    <label for="title"></label>
+                    <input type="text" id="title" name="title" placeholder="Title">
+                    <label for="pseudonym"></label>
+                    <input type="text" id="pseudonym" name="pseudonym" placeholder="Your name">
+                    <label for="post"></label>
+                    <textarea name="post" id="input" placeholder="Your story..."></textarea>
                     <div id="msg"></div>
-                    <button type="submit">Post</button>
+                    <button type="submit">Publish</button>
                 </form>
             </div>
             <div class="right">
-                <h3>Your post here</h3>
                 <div id="posts">
                     <div>
                         <!-- <p>Hello world post 1</p> -->

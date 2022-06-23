@@ -1,6 +1,8 @@
 const form = document.querySelector("#form");
-const input = document.querySelector("#input");
+const title = document.querySelector("#title");
+const pseudonym = document.querySelector("#pseudonym");
 const msg = document.querySelector("#msg");
+const post = document.querySelector('#input');
 const posts = document.querySelector("#posts");
 
 form.addEventListener('submit',  (e) => {
@@ -25,15 +27,23 @@ let  formValidation = () => {
 let data = {};
 
 let acceptData = () => {
-    data['text'] = input.value;
+    data = {
+        post: post.value,
+        pseudonym: pseudonym.value,
+        title: title.value,
+    } 
     console.log(data);
+    localStorage.setItem("data", JSON.stringify(data));
     createPosts();
+
 };
 
 let createPosts = () => {
     posts.innerHTML += `
     <div>
-        <p>${data.text}</p>
+        <h1>${data.title}</h1>
+        <p>${data.pseudonym}</p>
+        <p>${data.post}</p>
         <span class="options">
             <i onClick="editPost(this)" class="fas fa-edit"></i>
             <i onClick="deletePost(this)" class="fas fa-trash-alt"></i>
