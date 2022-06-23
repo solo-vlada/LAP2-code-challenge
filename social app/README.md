@@ -9,4 +9,24 @@ their name, timestamp, and a body.
 
 
 
-* App is in progress. FD part is almost ready 
+Installation & Usage
+
+Installation 
+* Run npm init -y 
+* Run install express
+* Run npm install nodemon 
+* Run npm i cors 
+* Run npm i pg 
+
+Usage
+
+
+Changelog 
+
+ * Created front-end with html, css, js. 
+ * Created requests to the server
+ * Implemented file structure for the api(MVC) & database
+ * Created an api 
+ * 
+
+
